@@ -1,5 +1,5 @@
 """
-A function is a block of code/sentenses that runs only when it is called
+A function is a block of code/sentences that runs only when it is called
 - can have parameters, i.e. it can accept input
 - it can return a result
 
