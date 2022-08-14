@@ -55,6 +55,3 @@ get_shape(10, 10)
 you can have default values for your functions, such that, if no arguments is passed, 
 the default value is used"""
 
-def isogram(word)
-    l = [x for x in word.lower()]
-    if len(set(l)) :
