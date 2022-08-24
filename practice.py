@@ -47,7 +47,7 @@ print("Min value of the set is: ", min(set))
 
 """count the number of odd and even elements in a list"""
 list = [10, 11, 12, 13, 17, 18, 10]
-
+"""
 def counter_using_loop(nums:List) ->tuple
 
 i = 0
@@ -57,4 +57,4 @@ while i < len(list):
     else:
        print(count())
     i += 1
-
+"""

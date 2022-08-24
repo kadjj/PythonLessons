@@ -1,6 +1,6 @@
 """For and While Loops
 
-While loop: excecutes a set of sentence until the condition is no longer valid
+While loop: executes a set of sentence until the condition is no longer valid
 """
 
 i = 10
@@ -35,3 +35,49 @@ for x in range (i): #range (start, stop, step)
 
 name = input( "What is your name: ")
 print(f"My name is {name}")
+
+"""For loop in a string - iterates over a string (sequence) by characters (letters)"""
+"""
+string = "Pyhton"
+for chr in string:
+    if chr == "t":
+       break
+
+    print(chr)
+
+list = ["English", "Germain", "French", "Spanish"]
+for language in list:
+    print(language)
+
+for count in range(1,8,2):
+    print(count)
+
+count = 1
+while count <= 5:
+    print(count)
+    count += 1
+"""
+
+"""number = int(input("Enter an integer: "))
+for count in range(1,11,2):
+    answer = number * count
+    print(number, "x", count, "=", answer)
+
+
+
+answer = 0
+for x in range(1,101):
+    answer = answer + x
+print(answer)
+"""
+
+N = int(input())
+sum = 0
+for i in range(0,N):
+    sum = sum +i
+    i+=1
+print(sum)
+
+
+
+

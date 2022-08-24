@@ -4,6 +4,8 @@ list are denoted/created using [ ]
 list are ordered collection of items
 allow duplicates
 changeable - add, remove, replace
+korrutades list, kordab listi
+
 """
 
 mylist = ['apples', 'mangoes', 2, 7.5, 'red']
@@ -111,3 +113,37 @@ new_age = [x for x in age if x%2 == 0]
 
 upp_list = [var.upper() for var in mylist]
 print(upp_list)
+
+
+list1 = ["python", "java", "c++"]
+print(list1)
+print(len(list1))
+print(list1[2])
+print(list1 + ["javascript"])
+list1.sort()
+print(list1)
+list1.append("R")
+print(list1)
+list2 = list1 + ["C"]
+print(list2)
+print(max(list2))
+#slicing of a list
+print(list2[1:3])
+
+list1[2] = "Ruby"
+print(list1)
+print("rust" in list1)
+for list1 in list1:
+    print(list1)
+list2.insert(2, "kotlin")
+print(list2)
+
+
+a = int(input("First year: "))
+b = int(input("Last year: "))
+list1 = list(range(a, b, 4))
+print(list1)
+
+list1 = [8, 9, 10, 5, 4, 12]
+list1.reverse()
+print(max(list1), min(list1), list1)

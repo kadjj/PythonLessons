@@ -35,6 +35,21 @@ my_name(30, "Kats")
 my_name(age=10, name="Kata")    #named arguments
 
 
+def is_isogram(word):
+    letters = set()
+    for letter in word.lower():
+        if letter in letters:
+            return False
+        letters.add(letter)
+    return True
+if __name__== "__main__":
+    while True:
+        my_word = input("Give a word: ").strip()
+        answer = "is" if is_isogram(my_word) else "is not"
+        print(f"Word {my_word} {answer} an isogram\n")
+        shall_continue = input("Do you want to continue ([y]/[n])?: ")
+        if shall_continue.lower() != "y":
+            break
 #calling your function
 # func_name(<<name_param>> = value)
 
@@ -55,3 +70,17 @@ get_shape(10, 10)
 you can have default values for your functions, such that, if no arguments is passed, 
 the default value is used"""
 
+def my_BMI(weight, height):
+    BMI = weight / height ** 2
+    if BMI < 18.5:
+        result = "Underweight"
+    elif BMI > 25:
+        result = "Overweight"
+    else:
+        result = "Normal"
+    return result
+if __name__ == '__main__':
+    her_weight = float(input("weight: "))
+    her_height = float(input("height: "))
+    her_BMI = my_BMI(her_weight, her_height)
+    print(f' her BMI is {her_BMI}')
