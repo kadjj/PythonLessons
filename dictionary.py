@@ -103,3 +103,14 @@ students = {
     }
 }
 print(students.keys())
+
+"""
+     Write a program that takes a number N from the user, then creates a dictionary of keys 1 through N with values that are the squares of the keys.
+"""
+N = int(input("Give a number: "))
+dictionary = {}
+
+for i in range(1, N + 1):
+    dictionary[i] = i**2
+for key, value in dictionary.items():
+    print(f"the square of {key} is {value}")

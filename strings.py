@@ -8,7 +8,7 @@ hello = "Welcome to python"
 print(hello[0])
 print(hello[4])
 print(hello[7])
-"""looping thtough a string
+"""looping though a string
 for <<variable_name_for_each_char>> in <<string>>:
 statements
 """
