@@ -77,8 +77,11 @@ if __name__ == "__main__":
     print(is_palindrom("kayak"))
     print(is_palindrom("Ala has a cat"))
 
+
 #5) Create a function that will calculate the number of upper and lower case letters in a string.
 def count_upper_lower_case(sentence):
+
+
     no_upper_case, no_lower_case = 0, 0
 
     for char in sentence:
@@ -96,6 +99,7 @@ if __name__ == "__main__":
     print(f"Number of uppercase letters: {upper}, number of lowercase letters: {lower}")
 
 #6)Write a function that takes two strings and checks to see if they are anagrams of each other.
+
 
 def are_anagrams(napis1, napis2): # you can also use, for example, Counter
     napis1 = sorted(napis1.lower().replace(" ", ""))
@@ -118,8 +122,8 @@ for example, "cauliflower". Check what happens then and be sure to handle except
 if __name__ == "__main__":
     while True:
         try:
-            number = float (input ("Enter a number: \n"))
+            number = float(input("Enter a number: \n"))
             print(f"The absolute value of {number} is {abs (number)}")
             break
         except ValueError:
-            print ("Cannot return absolute value for the specified input")
+            print("Cannot return absolute value for the specified input")
